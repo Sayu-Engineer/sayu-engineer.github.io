@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --green_dark: #3d8d7a;
+    --green_light: #b3d8a8;
+    --yellow_light: #fdfff1; /*#fbffe4*/
+    --teal_light: #a3d1c6;
+    --dark: #1a1a1d;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-style: normal;
+    font-size: 100%;
+    color: var(--dark);
+    background-color: var(--yellow_light);
+    width: 80%;
+    margin: auto;
+}
+nav {
+    margin: 20px 10%;
+}
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.current a:link,
+.current a:visited {
+    color: var(--green_light);
+    pointer-events: none;
+}
+.other a:link,
+.other a:visited {
+    color: var(--green_dark);
+    text-shadow: 1px 1px var(--green_light);
+}
+.other a:hover,
+.other a:active {
+    color: var(--green_dark);
+    text-shadow: 2px 2px 2px var(--teal_light);
+}
+.name > h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px var(--teal_light);
+    text-align: center;
+}
+.name > p {
+    font-weight: 300;
+    text-shadow: 2px 2px 1px var(--teal_light);
+    text-align: center;
+    padding-right: 30%;
+}
+section {
+    margin-top: 60px;
+    padding-bottom: 70px;
+    min-height: 200px;
+    /*border-bottom: 1px var(--green_dark) solid;
+    box-shadow: 0 4px 3px -4px var(--teal_light);*/
+}
+h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 2px 3px 2px var(--teal_light);
+}
+.p-about {
+    font-weight: 400;
+    letter-spacing: 0.09em;
+    text-indent: 1em;
+}
+.glow {
+    text-shadow: 2px 3px 2px var(--teal_light);
+}
+footer > p {
+    font-size: 0.9em;
+    font-weight: 200;
+}
+h4 {
+    margin-top: 2.3em;
+}
+p > a:link,
+p > a:visited {
+    color: var(--green_dark);
+    text-shadow: 2px 2px 2px var(--teal_light);
+}
+.mail {
+    color: var(--green_dark);
+    text-shadow: 2px 2px 2px var(--teal_light);
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .name > h1 {
+        font-size: 4em;
+        margin: 20px 10px;
+    }
+    .name > p {
+        font-size: 1.5em;
+        margin: 10px 20px;
+    }
+    nav > ul > li {
+        display: inline;
+        padding-right: 5px;
+        font-size: 1.4em;
+        font-weight: 200;
+        letter-spacing: -0.1em;
+    }
+    h2 {
+        font-size: 2em;
+        margin: 10px 15px;
+    }
+    p {
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 10px 20px;
+    }
+    .project > h3 {
+        font-size: 1.6em;
+        font-weight: 500;
+        margin: 10px 18px;
+    }
+    .p-about {
+        font-size: 1.2em;
+    }
+    #prj-cont {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-img {
+        display: inline-block;
+        max-width: 46%;
+        height: auto;
+        border-radius: 3px;
+        box-shadow: 4px 4px 3px -4px var(--teal_light);
+        margin: 2px 2px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .name > h1 {
+        font-size: 7em;
+        margin: 60px 20px 20px 20px;
+    }
+    .name > p {
+        font-size: 2em;
+        margin: 20px 30px;
+    }
+    nav > ul > li {
+        display: inline;
+        padding-right: 20px;
+        font-size: 1.9em;
+        font-weight: 200;
+    }
+    h2 {
+        font-size: 2.5em;
+        margin: 20px 15px;
+    }
+    p {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 20px 30px;
+    }
+    .project > h3 {
+        font-size: 1.9em;
+        font-weight: 500;
+        margin: 20px 20px;
+    }
+    .p-about {
+        font-size: 1.8em;
+    }
+    #prj-cont {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .project-img {
+        display: inline-block;
+        max-width: 40%;
+        height: auto;
+        border-radius: 3px;
+        box-shadow: 4px 4px 3px -4px var(--teal_light);
+        float: right;
+        margin: 2px 20px;
+    }
+    .sec-left {
+        flex: 1;
+    }
+    .sec-right {
+        flex: 2;
+    }
+}
